@@ -21,7 +21,8 @@ namespace MethodOverloads
             int a = int.Parse(Console.ReadLine());
             Console.WriteLine("Please give me another number!");
             int b = int.Parse(Console.ReadLine());
-            bool isTrue = true;
+            Console.WriteLine("You want to see this in dollars?(true/false)");
+            bool isTrue = bool.Parse(Console.ReadLine());
             var answer = Add(a,b,isTrue);
             Console.WriteLine(answer);
         }
@@ -47,7 +48,7 @@ namespace MethodOverloads
             }
             else
             {
-                return "something went wrong!";
+                return $"{sum}";
             }
         }
     }
